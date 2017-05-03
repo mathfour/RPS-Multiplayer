@@ -1,0 +1,25 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+div {
+    text-align: center;
+}
+
+.winLossAnnouncement {
+    font-size: 24px;
+}
+
+.form-inline {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+

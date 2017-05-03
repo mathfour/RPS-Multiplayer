@@ -6,14 +6,96 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible"
           content="ie=edge">
+    <meta property="og:url"
+          content="https://mathfour.github.io/GifTastic/"/>
+    <meta property="og:type"
+          content="application/javascript"/>
+    <meta property="og:title"
+          content="Colorful GifTastic"/>
+    <meta property="og:description"
+          content="Homework submission by Bon Crowder to The Houston Coding Bootcamp Powered by UT Austin"/>
+    <meta property="og:image"
+          content="images/GifTasticOGImage.png"/>
+    <link rel="icon"
+          type="image/png"
+          href="assets/images/BonCrowderFaviconWhiteBackground.png">
+    <!--<link rel="stylesheet"-->
+          <!--href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet"
+          type="text/css"
+          href="assets/css/rps.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <title>RPS with Friends</title>
 </head>
 <body>
 
+<div class="container">
+    
+    <div class="jumbotron">
+        <h1 class="display-3">Rock Paper Scissors <br> with Friends</h1>
+    </div>
+   
+    <div class="card nameInput">
+        <div class="card-block">
+            <form class="form-inline">
+                <label class="mr-sm-2" for="selfName">Name: </label>
+                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="selfName" placeholder="">
+                <button type="submit" class="btn btn-primary" id="startGame">Start Game</button>
+            </form>
+        </div>
+    </div>
+    <div class="card greeting">
+        <!-- bmc: class is hidden for the above -->
+        <div class="card-block">
+            <h3 class="text-center greeting">Hi there, <span id="userName"></span>!
+            </h3>
+            <span class="statusUpdate"></span> update
+        </div>
+    </div>
+    <div class="card-deck">
+        <div class="card">
+            <div class="card-block">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-block">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-block">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="jumbotron">
+        chat room
+        chat input
+        send button
+        
+        <input id="text" type="text" placeholder="Message"><br/>
+        <button id="post">Post</button><br/>
+        <div id="results"></div>
+        
+        
+    </div>
+    
+</div>
+<script src="assets/javascript/firebase.js"></script>
+<script src="assets/javascript/rps.js"></script>
+<script src="https://use.fontawesome.com/d2644d9941.js"></script>
+<!--<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>-->
 
-
-
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 </body>
 </html>

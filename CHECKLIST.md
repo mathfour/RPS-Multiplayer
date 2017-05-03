@@ -38,7 +38,7 @@
 5. Sees opponent's choice and is alerted to the winner.
 6. Score increases/decreases as necessary.
 6. Game resets after 5 seconds or so.
-7. Chat's with opponent and talks smack (types and presses send)
+7. Chats with opponent and talks smack (types and presses send)
 8. Receives smack talk from opponent (each line noted with name of player)
 9. Opponent gets mad and leaves (closes browser/refreshes) and gets disconnect notification.
 10. Waits for next player (and the score resets)
